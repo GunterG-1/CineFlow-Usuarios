@@ -1,3 +1,43 @@
+# CineFlow - Usuarios (Microservicio)
+
+Descripción
+-----------
+Registro, autenticación y gestión de perfiles de usuarios.
+
+Ejecutar localmente
+-------------------
+Requisitos: Java 17, Maven y MySQL.
+
+```bash
+cd CineFlow-Usuarios
+./mvnw spring-boot:run
+```
+
+Propiedades
+- Puerto: `8081`.
+- Endpoints importantes: actualización de perfil `PUT /usuarios/{id}/actualizar`.
+
+Tests
+-----
+```bash
+./mvnw test
+```
+# CineFlow-Usuarios
+
+Microservicio de gestión de usuarios y autenticación.
+
+Ejecutar:
+
+```
+cd CineFlow-Usuarios
+./mvnw spring-boot:run
+```
+
+Construir:
+
+```
+./mvnw clean package
+```
 # CineFlow-Usuarios
 
 Microservicio de usuarios de CineFlow construido con Spring Boot, JPA, MySQL, Lombok y Bean Validation.
@@ -48,7 +88,7 @@ Configuración actual en `src/main/resources/application.properties`:
 - base de datos: `usuarios`
 - usuario: `root`
 - contraseña: vacía
-- puerto de la aplicación: `8080`
+- puerto de la aplicación: `8081`
 
 Si usas otra configuración local, ajusta ese archivo antes de iniciar la app.
 
@@ -99,7 +139,7 @@ La entidad `Usuario` maneja estos campos:
 Base URL:
 
 ```bash
-http://localhost:8080/api/usuarios
+http://localhost:8081/api/usuarios
 ```
 
 ### 1. Obtener todos los usuarios
